@@ -1,0 +1,62 @@
+.event{
+    padding: 80px 0;
+    // background-image: linear-gradient(to bottom , #1b6ca7, #451D47);
+
+    &--frontend{
+        background-image: linear-gradient( #004558,#451D47 );
+    }
+    &--ux-ui{
+        background-image: linear-gradient( #451D47, #FFD1D9 );
+    }
+    &--data-science{
+        background-image: linear-gradient(#7a4049, #5C1839);
+    }
+    &--backend{
+        background-image: linear-gradient(#003362, #1b6ca7  );
+    }
+
+    &--image-left{
+        .container{
+            flex-direction: row-reverse;
+        }
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        
+    }
+
+
+    &__image{
+        max-width: 360px;
+    }
+
+    &__details{
+        margin-right: 40px;
+
+        &__title{
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        &__description{
+            line-height: 22px;
+        }
+    }
+
+    @media (max-width:640px) {
+        display: block;
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+}
